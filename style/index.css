@@ -1,0 +1,125 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+* {
+    font-family: Poppins;
+}
+#container {
+    height: 100vh;
+    /* background: #ddd; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card {
+    width: 340px;
+    /* background: white; */
+    border-radius: 2px;
+    margin: 12px 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 #ddd;
+
+}
+#title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    color: dodgerblue;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+#card form label {
+    font-size: 12px;
+
+}
+#input-field {
+    display: flex;
+    flex-direction: column;
+}
+#input-field input {
+    width: 95% !important;
+    padding: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+
+}
+#input-field input:focus {
+    outline: none;
+}
+#card form button[type="submit"] {
+    width: fit-content;
+    background: dodgerblue;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 #ddd;
+    margin: 12px 0;
+    padding: 7px 20px;
+}
+#eye-btn {
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ccc;
+}
+#modal-box {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#alert-title {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}
+#alert {
+    width: 280px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: 0 0 10px 0 #ddd;
+    background: white;
+    position: relative;
+
+    
+}
+#alert-btn {
+    border: none;
+    background: transparent;
+    color: green;
+    font-size: 28px;
+}
+#close-modal {
+    position: absolute;
+    top: -2px;
+    right: 2px;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 5px;
+    color: red;
+    cursor: pointer;
+
+}

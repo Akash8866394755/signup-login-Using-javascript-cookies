@@ -1,0 +1,106 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+* {
+    font-family: Poppins;
+}
+#container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#title {
+    padding: 0;
+    margin: 0;
+   margin-bottom: 16px;
+   color: dodgerblue;
+}
+#card {
+    width: 340px;
+     box-shadow: 0 0 10px 0 #ddd;
+    border-radius: 2px;
+    padding: 20px;
+}
+#card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#input-field input:focus {
+    outline: none;
+}
+#input-field input {
+    width: 95% !important;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#input-field label {
+    font-size: 12px;
+}
+#card form button[type = "submit"] {
+    padding: 7px 20px;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 #ddd;
+    background: dodgerblue;
+    width: fit-content;
+    margin: 12px 0;
+}
+#modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#alert-box {
+    width: 300px;
+    padding: 20px;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0 0 10px 0 #ddd;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    
+}
+#check {
+    font-size: 25px;
+}
+
+#alert-title {
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    
+}
+#close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
